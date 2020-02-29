@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Search Courses</title>
+      <!-- Css -->
+      <link href="static/css/bootstrap.css" rel="stylesheet">
+      <link href="static/css/style.css" rel="stylesheet">
+      <style>
+       form {
+    text-align:center;
+}
+          </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar inverted top"></span>
+               <span class="icon-bar inverted middle"></span>
+               <span class="icon-bar inverted bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="http://35.230.185.82:5000">
+            <img class="logo" src="static/img/logostern.png" alt="logo">
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000">Home</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000/alldata">All Data</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000/google_vision">Photo Analytics Data</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000/agg_analysis">Aggregate Analysis</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000/profsearch">Search By Professor</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="http://35.230.185.82:5000/coursesearch">Search By Courses</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container"><font size="+1">
+      <form action="/profrating">
+          <br>
+          <br>
+      Professor Name:<br>
+      <br>
+      <input type="text" name="prof_query"><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+      </font> </div>
+    <!-- script -->
+      <script src="static/js/jquery.js"></script>
+      <script src="static/js/bootstrap.min.js"></script>
+      <script src="static/js/modernizr.js"></script>
+      <script src="static/js/script.js"></script>
+       </body>

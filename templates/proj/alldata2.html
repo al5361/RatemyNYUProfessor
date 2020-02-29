@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>  
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h1 class="panel-title">Stern Course Faculty Evaluations</h1>
+            </div>
+            <table  class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr> 
+                        <th>Semester</th>
+                        <th>Course Number</th>
+                        <th>Class Name</th>
+                        <th>Professor Name</th>
+                        <th>Students Registered</th>
+                        <th>Number of Responses</th>
+                        <th>Expected Grade</th>
+                        <th>Preparedness</th>
+                        <th>Communication</th>
+                        <th>Motivation</th>
+                        <th>Overall Instructor</th>
+                        <th>Challenging</th>
+                        <th>Demanding</th>
+                        <th>Interest</th>
+                        <th>Overall Course</th>
+                        <th>Recommendation Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in table %}    <!-- Fill table rows for each station --> 
+                        <tr> 
+                            <td>{{ entry.semester }}</td>
+                            <td>{{ entry.course_num }}</td>
+                            <td>{{ entry.class_name }}</td>
+                            <td>{{ entry.prof_name }}</td>
+                            <td>{{ entry.students_registered }}</td>
+                            <td>{{ entry.num_responses }}</td>
+                            <td>{{ entry.expected_grade }}</td>
+                            <td>{{ entry.preparedness }}</td>
+                            <td>{{ entry.communication }}</td>
+                            <td>{{ entry.motivation }}</td>
+                            <td>{{ entry.overall_instructor }}</td>
+                            <td>{{ entry.challenging }}</td>
+                            <td>{{ entry.demanding }}</td>
+                            <td>{{ entry.interest }}</td>
+                            <td>{{ entry.overall_course }}</td>
+                            <td>{{ entry.recommendation_score }}</td>
+                        </tr>
+                    {% endfor %}
+                 </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
